@@ -10,8 +10,16 @@ window.function = async function(jsCode, p1, p2, p3) {
     }
 
     try {
+        // Prepare the code - add return if not present
+        let functionBody = jsCode.trim();
+
+        // If code doesn't contain 'return', wrap it with return
+        if (!functionBody.includes('return')) {
+            functionBody = `return (${functionBody})`;
+        }
+
         // Create a function from the provided code
-        const userFunction = new Function('p1', 'p2', 'p3', jsCode);
+        const userFunction = new Function('p1', 'p2', 'p3', functionBody);
 
         // Execute the function with the provided parameters
         const result = await userFunction(p1, p2, p3);
