@@ -1,23 +1,28 @@
 [
   {
     "kind": "column",
-    "name": "Simple Icons",
-    "description": "Use icons from Simple Icons - a free collection of brand icons. Customize the icon name, color, and size.",
+    "name": "JavaScript Code",
+    "description": "Execute custom JavaScript code with three parameters (p1, p2, p3) and return a string value.",
     "author": "xaviigna",
     "params": [
       {
-        "name": "iconName",
-        "displayName": "Icon Name (e.g., Google, GitHub, React)",
+        "name": "jsCode",
+        "displayName": "JavaScript Code",
         "type": "string"
       },
       {
-        "name": "color",
-        "displayName": "Color (hex code or color name, default: #000000)",
+        "name": "p1",
+        "displayName": "Parameter 1",
         "type": "string"
       },
       {
-        "name": "size",
-        "displayName": "Size in pixels (default: 24)",
+        "name": "p2",
+        "displayName": "Parameter 2",
+        "type": "string"
+      },
+      {
+        "name": "p3",
+        "displayName": "Parameter 3",
         "type": "string"
       }
     ],
