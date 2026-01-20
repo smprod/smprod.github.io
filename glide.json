@@ -2,7 +2,7 @@
   {
     "kind": "column",
     "name": "JavaScript Code",
-    "description": "Execute custom JavaScript code with three parameters (p1, p2, p3) and return a string value.",
+    "description": "Execute custom JavaScript code with three string parameters (p1, p2, p3) and three number parameters (n1, n2, n3).",
     "author": "xaviigna",
     "params": [
       {
@@ -12,17 +12,32 @@
       },
       {
         "name": "p1",
-        "displayName": "Parameter 1",
+        "displayName": "Parameter 1 (String)",
         "type": "string"
       },
       {
         "name": "p2",
-        "displayName": "Parameter 2",
+        "displayName": "Parameter 2 (String)",
         "type": "string"
       },
       {
         "name": "p3",
-        "displayName": "Parameter 3",
+        "displayName": "Parameter 3 (String)",
+        "type": "string"
+      },
+      {
+        "name": "n1",
+        "displayName": "Number 1",
+        "type": "string"
+      },
+      {
+        "name": "n2",
+        "displayName": "Number 2",
+        "type": "string"
+      },
+      {
+        "name": "n3",
+        "displayName": "Number 3",
         "type": "string"
       }
     ],
